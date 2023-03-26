@@ -8,8 +8,8 @@
     <title>criação de formularios</title>
 </head>
 <body>
-    <h1>tipos de formularios</h1>
-    <p>abaixo será listado varios tipos de formularios e suas funcionalidades</p>
+    <h1>Tipos de Formularios</h1>
+    <p class="intro">abaixo será listado varios tipos de formularios e suas funcionalidades</p>
     <form action="formulario.php" target="_blank" method="post" autocomplete="on">
         
         <fieldset>
@@ -20,12 +20,12 @@
             <label for="lestname">sobrenome</label><br>
             <input type="text" name="sobrenome" id="lastname" placeholder="sobrenome" required="required"><br>
 
-            <label for="idad">idade</label><br>
-            <input type="number" name="idade" id="idad" placeholder="idade" required>
+            <label for="idad" >idade</label><br>
+            <input type="number" name="idade" id="idad" placeholder="idade" required style="width: 80px;">
         
         </fieldset>
         
-        <label for="marcacar">marca do carro</label><br>
+        <label for="marcacar">Marca do Carro</label><br>
         <select name="marcacarro" id="marcacar" >
             <option value="wolksvagem">wolksvagem</option>
             <option value="fiat">fiat</option>
@@ -37,7 +37,7 @@
             <option value="audi">audi</option>
         </select><br>
         
-        <label for="descrit">descreva seu carro</label><br>
+        <label for="descrit">descreva teu carro</label><br>
         <textarea name="descriçãocarro" id="descrit" cols="30" rows="10" placeholder="audi A3, ano 2010, gasolina, 4 porta, elétrico"></textarea>
 
     </form>

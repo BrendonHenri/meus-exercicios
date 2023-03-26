@@ -1,4 +1,36 @@
 @charset "utf-8";
-body{
+*{
+    box-sizing: border-box;
+    padding: 0%; margin: 0%;
+}
+body{ 
+    background-color: lightblue;   
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+    background-color: aqua;
+    max-width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 1px 4px 6px 4px rgba(0, 0, 0, 0.203);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.449);
     
+}
+form{
+    max-width: 600px;
+    padding: 10px;
+    margin:20px auto;background-color: rgba(0, 255, 255, 0.234);
+    border-radius: 20px;
+}
+.intro{
+    text-align: center;
+    font-family: cursive;
+}
+fieldset{
+    max-width: 600px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 1px solid black;
 }
