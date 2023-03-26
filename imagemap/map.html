@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagemap</title>
+</head>
+<style>
+    body{
+        width: 100vw-;
+        height: 100vh;
+        position: relative;
+    }
+    h1{
+        font: italic bold 30px cursive;
+        text-align: center;
+
+    }
+    img{
+        filter: drop-shadow(4px 6px 8px rgb(0, 0, 0));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+       
+    }
+
+</style>
+<body>
+    <h1>aprendendo a criar imagemap</h1>
+    <img src="klipartz.com (2).png" alt="redes" usemap="#redemap">
+    <map name="redemap">
+
+        <!--para o shape rect basta descriminar o canto esquerdo superior depois o canto direiro inferior -->
+        <area shape="rect" coords="68, 153,182, 278 " href="https://www.facebook.com/" target="_blank" alt="facebook">
+        <area shape="re" coords="268,150,382,274" href="https://instagram.com/" target="_blank" alt="instagram">
+       
+       <!--para imgmap poly deverá descriminar as coordenadas do desenho da imagem o mais fielmente possível para ter um resultado satisfatório -->
+        <area shape="poly" coords="525,186,513,190,507,200,506,213,502,230,492,236,500,241,502,246,512,246,522,256,537,250,544,246,552,246,562,239,563,236,548,222,555,216,553,212,546,212,544,196,536,188,525,186" href="https://www.snapchat.com/" target="_blank" alt="snapchat">
+        
+        
+        <!--para definir o circulo, indentifique o centro do objeto e depois calcule o raio -->
+        <area shape="circle" coords="330,400,34" href="https://www.facebook.com/" target="_blank" alt="zap">
+   
+    </map>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criação de formularios</title>
+</head>
+<style>
+    div{
+        position: relative;
+        display: flex;
+        z-index: 2;
+    }
+    #iniciar{
+        background-color: transparent;
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        border: 1px solid black;
+        font: normal bold 18px arial;
+        border-radius: 18px;
+        padding: 6px 10px;
+        color: rgb(18, 18, 18);
+        box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1)
+    }
+    #iniciar:hover{
+       transform: skewX(45deg) translateX(50px);
+       transition: 0.5s;
+    }
+    #iniciar:hover::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: skewX(45deg) translateX(150px);
+        transition: .5s;
+    }
+
+</style>
+<body>
+    <h1> preencha o formulario </h1>
+    <form action="formulario.txt" autocomplete="off" method="get">
+
+        <!-- sequencia para preencher um formalario, observar sempre a senquencia e a importancia da (LABEL) para fazer ligaçoes corretas entre formulario e lacuna 
+        
+            <p <label for= "id" > nome de exibição <input type"X" name"X" id"X"> </p> 
+        -->
+
+        <p> <label for="nome" > nome:</label> <input type="text" name="nome" id="nome"></p>
+        
+        <p><label for="sobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="sobrenome"></p>
+
+        <p><label for="idade">idade:</label><input type="text" name="idade" id="idade"></p>
+        <p><label for="sexo">sexo:<input type="text" name="sexo" id="sexo"></label></p>
+
+        <p><input type="submit" value="enviar" ></p>
+
+        <!--metodos de envio sem criptografia são o method"get e post" o get ja vem por padrão nao precisa discrimminar
+                            <form action="formulario.txt" autocomplete="off" method="POST">
+                            <form action="formulario.txt" autocomplete="off" method="get">
+           
+            o metodo POST é mais recomendado para envio de dados sensivei como (numero de cartões, CPF, senhas etc...)e também envio de medias, como imagens por exemplo. 
+            
+            o metodo GET é melhor para coisas comuns do dia a dia como (pesquisa, nome, busca de conteudo no proprio site etc...)GEt é limitado a 3 mil byts que também gera uma limitação                  
+        -->
+    </form>
+
+
+    <form action="formulario.js" method="post" autocomplete="off">
+        <div>
+            <label for="usuario">usuario:</label>
+            <input type="text" name="usuario" id="usuario" required minlength="10" maxlength="16" placeholder="nome de usuario" size="12">
+            <!-- !!!novos paramentros!!! 
+             required = obriga o usuario o colocar um valor 
+             minlength = dita o numeoro min de caracteres 
+             maxlength= dita o numero maximo de caracteres
+             placeholder = deixa uma pista escrita para o usuario compreender o bloco 
+             size = dita o tamanho de exibição do bloco em caracteres 
+            -->
+        </div>
+        <div>
+            <label for="senha">senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="senha de acesso" minlength="9" maxlength="16" required>
+        </div>
+          <!-- !!!novos paramentros!!! 
+             required = obriga o usuario o colocar um valor 
+             minlength = dita o numeoro min de caracteres 
+             maxlength= dita o numero maximo de caracteres
+             placeholder = deixa uma pista escrita para o usuario compreender o bloco 
+             size = dita o tamanho de exibição do bloco em caracteres 
+            -->
+        <div><input type="submit" value="iniciar" id="iniciar"></div><!--botão submit tem o VALUE por padrão ENVIAR, mas se discriminado pode ser mudado-->
+    
+        <div><input type="reset" ></div><!--botão reset primordial para o usuario, necessário o !!value=""!! que por padrão é REDEFINIR -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criação de tabelas </title>
+</head>
+<style>
+    #tab1{
+        width: 600px;
+        border:  3px ridge rgb(0, 0, 0);
+        border-collapse: collapse;
+        font: italic normal 20px arial;
+        background-color: rgba(0, 255, 255, 0.341);
+    }
+    .td01{
+        border: 3px ridge black;
+    }
+    #tab1 th{
+        border: 3px ridge black;
+    }
+
+
+    /* fim tabela 1 */
+
+    #tab2{
+        border: 2px solid black;
+        width: 100%;
+        
+        font: normal normal 20px cursive;
+        background-color: rgba(216, 112, 147, 0.458);
+        border-spacing: 20px;
+    }/* boder spacing , tectcica de espaçamento nova */
+    #tab2  th{
+        border: 2px solid black;   
+    }
+    .td02{
+        border: 2px solid black;  
+    }
+    /* fim da tabela 2 */
+
+
+    #tab3{
+        border: 4px solid black;
+        background-color: aquamarine; 
+        width: 600px;  
+        border-radius: 12px;
+    }
+    .td03{
+        border: 3px solid black; 
+        border-radius: 12px; 
+    }
+    #tab3 th{
+        border: 3px solid black;
+        border-radius: 12px;
+    }
+    #tab3 tr:nth-child(even){  /* valores são odd(impar) even(par) */
+        background-color: chocolate;
+    }
+   
+</style>
+<body>
+    <h1>desenvolvendo tabelas diversas</h1>
+    <h2>tabela simples</h2>
+    <table id="tab1">
+        <thead>
+            <tr>
+                <th>company</th>
+                <th>contact</th>
+                <th>country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td01" >maria andres</td>
+                <td class="td01" >germany</td>
+                <td class="td01" >alfred cooper</td>
+            </tr>
+            <tr>
+                <td class="td01" >centro comrcial moctezuma</td>
+                <td class="td01" >francisco chang</td>
+                <td class="td01" >mexico</td>
+            </tr>
+            <tr>
+                <td class="td01" >ernest handel</td>
+                <td class="td01" >roland mendel</td>
+                <td class="td01" >austria</td>
+            </tr>
+            <tr>
+                <td class="td01" >island trading</td>
+                <td class="td01" >helen bennett</td>
+                <td class="td01" >UK</td>
+            </tr>
+            <tr>
+                <td class="td01" >laughing bacchus winecellar </td>
+                <td class="td01" >yoshi tannamuri</td>
+                <td class="td01" >canada</td>
+            </tr>
+            <tr>
+                <td class="td01" >magzzini alimentari riuniti</td>
+                <td class="td01" >gionvanni rovelli</td>
+                <td class="td01" >italy</td>
+            </tr>
+        </tbody>
+    </table> 
+
+
+    <h2>tabela com expanssores</h2>
+    <table id="tab2">
+        <thead>
+           <tr>
+                <td></td>
+                <th>pai</th>
+                <th>mae</th>
+                <th>idade</th>
+                <th>sexo</th>
+            </tr>
+         </thead>
+         <tbody>
+           
+            <tr>
+                <th rowspan="10">familiar</th>
+                <td class="td02" >jose</td>
+                <td class="td02" >maria</td>
+                <td class="td02" >34</td>
+                <td class="td02" >masc.</td>
+            </tr>
+            <tr>
+                <td class="td02" >jose</td>
+                <td class="td02" >maria</td>
+                <td class="td02" >34</td>
+                <td class="td02" >masc.</td>
+            </tr>
+            <tr> <td class="td02" >jose</td>
+                <td class="td02" >maria</td>
+                <td class="td02" >34</td>
+                <td class="td02" >masc.</td>
+            </tr>
+            <tr> <td class="td02" >jose</td>
+                <td class="td02" >maria</td>
+                <td class="td02" >34</td>
+                <td class="td02" >masc.</td>
+            </tr>
+            <tr> <td class="td02" >jose</td>
+                <td class="td02" >maria</td>
+                <td class="td02" >34</td>
+                <td class="td02" >masc.</td>
+            </tr>
+         </tbody>
+    </table>
+    <table id="tab3">
+        <h2>tabela zebrada</h2>
+        <caption>dados</caption>
+        <colgroup>
+            <col span="1" style="width:50px;" >
+            <col span="2" style="background-color: aqua;"></colgroup>
+        
+        <thead>
+            <tr>
+                <td></td>
+                <th>seg</th>
+                <th>ter</th>
+                <th>quar</th>
+                <th>quin</th>
+                <th>sex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td03" >08:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+            <tr>
+                <td class="td03" >09:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+            <tr>
+                <td class="td03" >10:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+            <tr>
+                <td class="td03" >11:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+            <tr>
+                <td class="td03" >12:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+            <tr>
+                <td class="td03" >13:00</td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+                <td class="td03" ></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
