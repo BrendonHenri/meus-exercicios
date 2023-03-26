@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>criação de formularios</title>
+</head>
+<body>
+    <h1>tipos de formularios</h1>
+    <p>abaixo será listado varios tipos de formularios e suas funcionalidades</p>
+    <form action="formulario.php" target="_blank" method="post" autocomplete="on">
+        
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <label for="inome">nome</label><br/>
+            <input type="text" name="nome" id="inome" placeholder="nome" required="required" maxlength="10" />
+            <br>
+            <label for="lestname">sobrenome</label><br>
+            <input type="text" name="sobrenome" id="lastname" placeholder="sobrenome" required="required"><br>
+
+            <label for="idad">idade</label><br>
+            <input type="number" name="idade" id="idad" placeholder="idade" required>
+        
+        </fieldset>
+        
+        <label for="marcacar">marca do carro</label><br>
+        <select name="marcacarro" id="marcacar" >
+            <option value="wolksvagem">wolksvagem</option>
+            <option value="fiat">fiat</option>
+            <option value="renault">renault</option>
+            <option value="honda">honda</option>
+            <option value="toyota">toyota</option>
+            <option value="mercedes" selected>mercedes</option>
+            <option value="volvo">volvo</option>
+            <option value="audi">audi</option>
+        </select><br>
+        
+        <label for="descrit">descreva seu carro</label><br>
+        <textarea name="descriçãocarro" id="descrit" cols="30" rows="10" placeholder="audi A3, ano 2010, gasolina, 4 porta, elétrico"></textarea>
+
+    </form>
+    
+</body>
+</html>
