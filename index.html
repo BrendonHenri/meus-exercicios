@@ -13,35 +13,72 @@
         padding: 0%; margin: 0%;
        box-sizing: border-box;
     }
-   header{
-        background: black url(itachi.jpg) no-repeat fixed center top ;
-        background-size: cover;
-        height: 200px;
+    body,html{
         width: 100vw;
+        height: 100vh;
+    }
+
+   header{
+        max-width:100vw;
+        display: grid;
+      
+      
+    }
+    .fundo_header{
+        max-width: 100vw;
+        max-height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        position: absolute;
+        
+       
+
     }
     h1{
         max-width: 100vw;
-        padding: 60px 10px;
+        font-size: 4vw;
+        padding: 50px 10px 60px;
         text-align: center;
         font-variant: small-caps;
         text-shadow: 2px 2px 3px rgb(2, 2, 2), 3px 3px 4px rgb(95, 94, 95), 4px 4px 6px   rgba(238, 237, 238, 0.744) ;
         font-family: 'Times New Roman', Times, serif;
         color: rgba(251, 0, 13, 0.852);
         filter: drop-shadow(1px 1px 12px rgb(54, 50, 53));
+       
 
+    }
+    main{
+        background-color: rgba(120, 131, 141, 0.262);
+        max-width: 90vw;
+        margin: 40px auto;
+    }
+    
+    section{
+        margin: 20px 40px; 
+    }
+
+    i{
+        font-size: 40px;
+        color: black; 
+        text-shadow: 2px 1px 3px rgba(63, 61, 61, 0.534) ;   
+        filter: drop-shadow(3px 2px 3px rgba(232, 243, 30, 0.633));
     }
 
     </style>
 </head>
 <body>
-        <header>
-            <h1>Olhe  o Que Acontece</h1>
-        </header>
-            <section>
-                <h2>apresentação de icones</h2>
-                <p>exemplos de icones utilizando a plataforma <strong>Fonteawesome</strong> </p>
-                <i class="fa-brands fa-tiktok fa-beat" style="color: #d3224e;"></i>
-            </section>
-
+  <header>
+    <h1>Olhe  o Que Acontece</h1>
+         <img class="fundo_header" src="itachi.jpg" alt="itachi background" >
+      
+ </header>       
+   <main>
+     <section>
+     <h2>apresentação de icones</h2>
+        <p>exemplos de icones utilizando a platafo  <strong>Fonteawesome</strong> </p><br>
+        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok fa-beat" ></i></a>
+     </section>
+  </main>
 </body>
 </html>
